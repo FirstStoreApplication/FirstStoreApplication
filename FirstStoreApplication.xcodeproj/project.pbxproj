@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		14A9D3931C733D4A00233545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A9D3921C733D4A00233545 /* AppDelegate.swift */; };
-		14A9D3951C733D4A00233545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A9D3941C733D4A00233545 /* ViewController.swift */; };
 		14A9D3981C733D4A00233545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A9D3961C733D4A00233545 /* Main.storyboard */; };
 		14A9D39A1C733D4A00233545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A9D3991C733D4A00233545 /* Assets.xcassets */; };
 		14A9D39D1C733D4A00233545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A9D39B1C733D4A00233545 /* LaunchScreen.storyboard */; };
@@ -33,6 +32,11 @@
 		14A9D4181C7340F900233545 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A9D4171C7340F900233545 /* AudioToolbox.framework */; };
 		14A9D41A1C73410200233545 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A9D4191C73410200233545 /* AdSupport.framework */; };
 		14A9D4381C7343D500233545 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A9D4371C7343D500233545 /* GoogleMobileAds.framework */; };
+		E01C11191C7626BE00393D80 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C11131C7626BE00393D80 /* UIExtension.swift */; };
+		E01C111A1C7626BE00393D80 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E01C11141C7626BE00393D80 /* icon.png */; };
+		E01C111B1C7626BE00393D80 /* LSMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C11151C7626BE00393D80 /* LSMViewController.swift */; };
+		E01C111C1C7626BE00393D80 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C11161C7626BE00393D80 /* MenuViewController.swift */; };
+		E01C111D1C7626BE00393D80 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C11171C7626BE00393D80 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,7 +122,6 @@
 /* Begin PBXFileReference section */
 		14A9D38F1C733D4A00233545 /* FirstStoreApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstStoreApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A9D3921C733D4A00233545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14A9D3941C733D4A00233545 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14A9D3971C733D4A00233545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14A9D3991C733D4A00233545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14A9D39C1C733D4A00233545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,6 +151,11 @@
 		14A9D4171C7340F900233545 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		14A9D4191C73410200233545 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		14A9D4371C7343D500233545 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		E01C11131C7626BE00393D80 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		E01C11141C7626BE00393D80 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E01C11151C7626BE00393D80 /* LSMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSMViewController.swift; sourceTree = "<group>"; };
+		E01C11161C7626BE00393D80 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E01C11171C7626BE00393D80 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,13 +221,13 @@
 		14A9D3911C733D4A00233545 /* FirstStoreApplication */ = {
 			isa = PBXGroup;
 			children = (
+				E01C11121C7626AD00393D80 /* Controller */,
 				14A9D41D1C73424500233545 /* Icons */,
 				14A9D41C1C73424000233545 /* Image */,
 				14A9D41B1C73417200233545 /* Admob */,
 				14A9D3FE1C733FEB00233545 /* Facebook */,
 				14A9D3F51C733E6D00233545 /* Alamofire */,
 				14A9D3921C733D4A00233545 /* AppDelegate.swift */,
-				14A9D3941C733D4A00233545 /* ViewController.swift */,
 				14A9D3961C733D4A00233545 /* Main.storyboard */,
 				14A9D3991C733D4A00233545 /* Assets.xcassets */,
 				14A9D39B1C733D4A00233545 /* LaunchScreen.storyboard */,
@@ -312,6 +320,18 @@
 			children = (
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		E01C11121C7626AD00393D80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E01C11131C7626BE00393D80 /* UIExtension.swift */,
+				E01C11141C7626BE00393D80 /* icon.png */,
+				E01C11151C7626BE00393D80 /* LSMViewController.swift */,
+				E01C11161C7626BE00393D80 /* MenuViewController.swift */,
+				E01C11171C7626BE00393D80 /* MainViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14A9D4001C73400900233545 /* facebook_baglanti_yap.png in Resources */,
+				E01C111A1C7626BE00393D80 /* icon.png in Resources */,
 				14A9D39D1C733D4A00233545 /* LaunchScreen.storyboard in Resources */,
 				14A9D39A1C733D4A00233545 /* Assets.xcassets in Resources */,
 				14A9D3981C733D4A00233545 /* Main.storyboard in Resources */,
@@ -505,10 +526,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A9D3951C733D4A00233545 /* ViewController.swift in Sources */,
+				E01C111D1C7626BE00393D80 /* MainViewController.swift in Sources */,
+				E01C111C1C7626BE00393D80 /* MenuViewController.swift in Sources */,
 				14A9D4021C73401200233545 /* ornekFacebookBaglanResimCikis.swift in Sources */,
+				E01C111B1C7626BE00393D80 /* LSMViewController.swift in Sources */,
 				14A9D3931C733D4A00233545 /* AppDelegate.swift in Sources */,
 				14A9D4041C73402800233545 /* uploadClass.swift in Sources */,
+				E01C11191C7626BE00393D80 /* UIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

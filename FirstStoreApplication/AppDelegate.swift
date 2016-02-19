@@ -12,10 +12,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    var lsmVC: LSMViewController!
+    var mainNavigationController: UINavigationController!
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
+        
+        //let mainVC: MainViewController = MainViewController()
+        self.mainNavigationController = UIStoryboard.mainNavigationController()! //UINavigationController(rootViewController: mainVC)
+        
+        let leftVC: MenuViewController = UIStoryboard.menuViewController()! //MenuViewController()
+        
+        self.lsmVC = LSMViewController(leftVC: leftVC, mainVC: self.mainNavigationController)
+        self.window!.rootViewController = self.lsmVC
+        
+        UINavigationBar.appearance().barTintColor = UIColor.yellowColor()
+        
         return true
     }
 
